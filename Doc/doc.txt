@@ -1,0 +1,68 @@
+
+Site "English Learning Tests"
+
+index.html
+    index.js
+        App.js
+            Header.js
+                HeaderTests.js
+                    HeaderTestsList.js
+                HeaderWords.js
+                    HeaderWordsList.js
+                HeaderListen.js
+                    HeaderListenList.js
+
+            Tests.js
+                ShowCurrentTest.js
+                    QuestionTest.js
+                    AnswerTest.js
+                    FooterQuestion.js                                        
+
+            Words.js
+                ShowWordTest.js
+                    showDescr.js
+                    inputWord.js
+                    showAnswer.js
+                    showWord2.js
+                    showTranscription.js
+                    nextWord.js
+
+            Listen.js
+
+
+            
+            Phrases.js
+            Jokes.js
+            Footer.js
+
+
+id="root"   //index.html
+    id="London_bgr"   // App.js
+        class="header_header"   //Header.js
+            id="header_menu_tests_cont_id"   //HeaderTests.js
+                id="header_menu_tests" class="header_menu_item"  //HeaderTests.js
+            id="list_tests_wrapper"  //HeaderTestsList.js
+                id="TEST1" class="menu_test"  //HeaderTestsList.js
+                id="TEST2" class="menu_test"  //HeaderTestsList.js
+                ...
+        id="tests_wrapper"  //Tests.js
+            id="ID00_question" class="question_test"  // ShowCurrentTest.js,  the question in first test question
+            id="id0" class="li_class"  // first answer  in first test question
+            id="id1" class="li_class"  // second answer  in first test question
+            ...
+            id="footer_question" id="ID00_footer_question"  // WHY, 2 time counts
+                class="button_test"  id={ID_work2} //WHY
+                class="number_question" id={ID_work5}  // number of question
+                class="correct_answers" id={ID_work6}  //correct answers
+                class="time_question" id={ID_time_qst}  // time of question
+                class="time_test" id={ID_time_work8}  // time of test
+            class="space_question" id={ID_work3}  //space
+
+        id="words_wrapper"  // Words.js
+            className='body_words' //ShowCurrentTest.js
+                id="descr" //ShowCurrentTest.js, showDescr.js
+                id="button_input_word" //ShowCurrentTest.js, inputWord.j
+                id="answer" //ShowCurrentTest.js, showAnswer.js
+                id="button_show_words" //ShowCurrentTest.js, showWord2.js
+                id="button_show_transcription" //ShowCurrentTest.js, showTranscription.js
+                id="button_next_word" //ShowCurrentTest.js, nextWord.js

@@ -1,0 +1,15 @@
+.menu_test {
+	height: 20px; 
+	width:	40px;	
+	border-radius: 5px;
+  	padding-top: 6px;
+  	color: blue;
+  	font-size: 11px;
+	
+}	
+
+.menu_test:hover  {
+	background-color: yellow;
+	color: red;
+
+}	

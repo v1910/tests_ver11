@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+/*  color: white;*/
+  font-weight: normal;
+}
+
+/* --- Global reset --- */
+html,
+body{
+  margin: 0;
+  padding: 0;
+  background: rgba(255,255,255,0.2);
+  font-family: "OpenSans-Regular", sans-serif;
+  color: white;
+  font-size: 16px;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+a { 
+  text-decoration: none; 
+ } 
+#London_bgr{
+  position: relative;
+  background-image: url("./London.jpg");
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  background-position-x: 50%;
+  min-height: 100vh;
+}
+
+@media (max-width: 930px){
+  #London_bgr{
+    background-size: 100% 50%;
+  }
+}
+
+#header_text_1 {  /*for English Learning Tests*/
+  display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+ 	align-items: center;
+   margin-top: 150px;
+  font-family: "Open Sans";
+  font-size: 62px;
+  font-weight: 400;
+  color: white;
+}

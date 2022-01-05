@@ -1,0 +1,26 @@
+
+#list_listen_wrapper {
+	width: 30px;
+	height: 100px;
+	padding-left: 2px;
+	font-size: 10px;
+	
+}
+
+.header_menu_listen_cont {
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding-top: 0px;
+	padding-left: 5px;
+}
+#header_menu_listen {
+	width: 45px;
+	margin-top: 5px;
+}
+#header_menu_listen_cont_id {
+	width: 45px;
+	height: 20px;
+	top: 10px;
+	margin-left: 5px;
+}

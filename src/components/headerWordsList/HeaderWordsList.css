@@ -1,0 +1,34 @@
+.menu_word {
+	height: 20px; 
+	width:	100px;	
+	border-radius: 5px;
+	padding-top: 6px;
+	padding-left: 2px;
+/*  padding-bottom: 6px;*/
+  	color: blue;
+  	font-size: 11px;
+}
+
+
+.menu_word:hover  {
+	background-color: yellow;
+	color: red;
+
+}
+
+
+#header_menu_words:hover + #list_words_wrapper {
+	visibility: visible;
+}	
+
+#list_words_wrapper {
+	width: 20px;
+	height: 50px;
+	padding-left: 2px;
+	font-size: 10px;
+/*	visibility: hidden;*/
+}  
+
+#list_words_wrapper:hover {
+	visibility: visible;
+} 

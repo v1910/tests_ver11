@@ -1,0 +1,45 @@
+.body_listen {
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #00cc99; 
+    font-family: "Open Sans";
+    font-size: 28px;
+    font-weight: 400; 
+}
+
+/* button_show_descr button*/
+#button_show_descr {
+    background-color: #9A8870;/*LightGray; #4CAF50;*/
+    color: white;
+    width: 220px;
+    padding: 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;   
+}
+
+/* button_show_words button*/
+#button_show_words {
+    /*   background-color: transparent;
+       border: 2px solid yellow;
+    */   
+    background-color: #9A8870;/*LightGray; #4CAF50;*/
+    color: white;
+    width: 220px;
+    padding: 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;   
+}
+
+
+ figure { /* for canvas */
+    margin: 0;
+}

@@ -1,0 +1,38 @@
+
+#list_phrases_wrapper {
+	width: 60px;
+	height: 100px;
+	padding-left: 2px;
+	font-size: 10px;
+	
+}
+
+.header_menu_phrases_cont {
+	height: 20px;
+	width: 60px;
+	margin-left: 5px;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: blue;
+    text-decoration: none;	
+}
+
+.header_menu_phrases_cont:hover  {
+	background-color: yellow;
+	color: red;
+
+}	
+
+#header_menu_phrases {
+	width: 60px;
+	margin-top: 5px;
+}
+
+#header_menu_phrases_cont_id {
+	width: 60px;
+	height: 20px;
+	top: 10px;
+	margin-left: 5px;
+}

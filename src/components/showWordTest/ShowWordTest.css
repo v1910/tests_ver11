@@ -1,0 +1,166 @@
+.body_words {
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #00cc99; 
+    font-family: "Open Sans";
+    font-size: 28px;
+    font-weight: 400; 
+}
+
+/* button_show_descr button*/
+#button_show_descr {
+    background-color: #9A8870;/*LightGray; #4CAF50;*/
+    color: white;
+    width: 220px;
+    padding: 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;   
+}
+
+ /* show label_descr*/
+#label_descr {
+    color: black; /*#EEDDFF;	*/
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+  
+
+/* block of inputing root word*/
+#input_word {
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    border: block;		
+}
+ 
+ /* input the root word*/
+#input_input_word {
+    background-color: white;
+    color: black;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: none;	
+    display: block; 
+}
+ 
+ /* check inputing word */
+#button_input_word {
+    background-color: #9A8870;/*LightGray; #4CAF50;*/
+    color: white;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+ /*   display: block; */
+    padding: 16px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;   
+}
+ 
+ /* yes - correct inputing word, other - no*/
+#label_yes_no_word {
+    color: black;	
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 10px;
+    font-size: 20px;
+    border-color: #4CAF50;
+}
+ 
+#button_show_answer {
+    background-color: #9A8870;/*LightGray; #4CAF50;*/
+    color: white;
+    width: 220px;
+    padding: 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;   
+}
+ 
+#label_answer {
+	color: black;	
+    margin-bottom: 10px;
+	margin-left: auto;
+    margin-right: auto;
+	display: block;
+}
+
+/* button_show_words button*/
+#button_show_words {
+    /*   background-color: transparent;
+       border: 2px solid yellow;
+    */   
+    background-color: #9A8870;/*LightGray; #4CAF50;*/
+    color: white;
+    width: 220px;
+    padding: 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;   
+}
+
+/* show words*/
+#label_words {
+    color: black;	
+    margin-bottom: 10px;
+	margin-left: auto;
+    margin-right: auto;
+	display: block;
+}   
+
+
+/* button_show_transcription button*/
+#button_show_transcription {
+    background-color: #9A8870;/*LightGray; #4CAF50;*/
+    color: white;
+    width: 220px;
+    padding: 16px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;   
+}
+
+
+/* show label_transcription*/
+#label_transcription {
+    color: black;		
+    margin-bottom: 10px;
+	margin-left: auto;
+    margin-right: auto;
+    display: block;	
+}
+
+
+/* button_next_word button*/
+#button_next_word {
+    background-color: #9A8870;/*LightGray; #4CAF50;*/
+    color: white;
+    width: 220px;
+    padding: 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+ }
+ 

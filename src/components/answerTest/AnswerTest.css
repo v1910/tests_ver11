@@ -1,0 +1,28 @@
+
+.li_class {
+  font-size: 16px;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  text-align: left;
+  background-color:  rgba(255,255,255,1);
+}
+
+.li_class:hover {
+	background-color: yellow; /* Green */
+}
+
+
+.question_test {
+	text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 200;
+  color: black;
+	padding-top: 5px;
+  padding-bottom: 5px;	
+	margin-top: 5px;
+	margin-bottom: 5px;
+}	
+

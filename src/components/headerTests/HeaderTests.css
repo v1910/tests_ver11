@@ -1,0 +1,42 @@
+#list_tests_wrapper {
+	width: 30px;
+	height: 100px;
+	padding-left: 2px;
+	font-size: 10px;	
+}
+
+.header_menu_tests_cont {
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding-top: 0px;
+	padding-left: 5px;
+}
+#header_menu_tests {
+	width: 45px;
+	margin-top: 5px;
+}
+#header_menu_tests_cont_id {
+	width: 45px;
+	height: 20px;
+	top: 5px;
+}
+
+.header_menu_item {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: blue;
+    text-decoration: none;
+	padding-left: 5px;
+} 
+
+.header_menu_item:hover {
+	background-color: yellow;
+	color: red;
+} 
+
+/*
+    display: inline-block;
+*/	
