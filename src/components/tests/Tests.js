@@ -10,7 +10,8 @@ export function Tests() {
 
     let showCurrentTestWork = null;
 
-    if(showHideTest) showCurrentTestWork = <ShowCurrentTest />; //<ShowCurrentTest parCallback = {testCallback} />;
+    if(showHideTest) showCurrentTestWork = <ShowCurrentTest /> //<ShowCurrentTest parCallback = {testCallback} />;
+    else showCurrentTestWork = null;
 
     return <section id="tests_wrapper">
         {showCurrentTestWork}

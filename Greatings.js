@@ -1,0 +1,73 @@
+db.Greatings.insertMany([
+{
+'_id': 1,
+'name': 'Begining',  
+'phrases': 
+    [
+        "Thank you for your letter.",
+        "Thank you for contacting us.",
+        "In reply to your request …",
+        "Thank you for your letter regarding …",
+        "I am writing to inform you that … ", 
+        "I am writing to confirm …", 
+        "I am writing to enquire about … ",
+        "I am contacting you for the following reason …",
+        "I have received your address from (name) and I would like to …",
+        "With reference to your letter of June 8, I …"
+    ]
+},
+
+{
+'_id': 2,
+'name': 'End',
+'phrases':
+    [
+        'I would appreciate your immediate attention to this matter.',
+        'Should you need any further information, please do not hesitate to contact us.',
+        'If you require any further information, feel free to contact me.',
+        'I look forward to hearing from you.',
+        'Yours sincerely …',
+        'Yours faithfully …',
+        'Best regards …',
+        'Thanks in advance...'
+    ]
+},
+
+{
+'_id': 3,
+'name': 'Semi-formal',
+'phrases':
+    [
+        "She came up with a great idea.(came up with = created, invented, thought of).",
+        "Im available on Friday morning.",
+        "This project is on the back burner.",
+        "We’re operating in the red.",
+        "Could you please call me later?",
+        "I'm afraid you’re mistaken.",
+        "This could be improved."
+    ]
+},
+
+{
+'_id': 4,
+'name': 'Other',
+'phrases': 
+    [
+        "so pay close attention.",
+        "Good luck!",
+        "Let's write an example function that finds the maximum number." ,
+        "Really neat!"  ,
+        "Let’s just say",
+        "Thanks so much",
+        "Let's say that",
+        "ie from client device",
+        "and in turn have the platform send the recipient an email",
+        "Many thanks for your quick answer.",
+        "likewise",
+        "to tell you truth",
+        "to be truly",
+        "Let’s break it down"
+    ]
+}
+
+)

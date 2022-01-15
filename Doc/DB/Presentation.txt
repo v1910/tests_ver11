@@ -1,0 +1,28 @@
+//DB of Presentation
+
+db.Presentation.insertOne(
+db.Presentation.updateOne({_id: 2}, {$set: {phrases: "- Girl, why do you smoke?</br> - I`m trying to kill the horse try "}})
+db.Presentation.replaceOne({_id: 4}, {
+'_id': 16,
+'name': 'Quarantine',  
+'phrases': ['A case of coronavirus was recorded: the wife strangled her husband on the fifth day of quarantine.']
+})
+
+✅ Talk through — обсуждать что-либо в деталях, очень подробно. Также это фразовый глагол имеет значение "подробно объяснять что-либо кому-либо", если используется с дополнением: talk somebody through something:
+▪ Now let us talk through the main problems with the new client base. — Теперь давайте детально обсудим проблемы с нашей базой клиентов.
+ 
+✅ Run through — просмотреть, быстро пройтись по списку, не вдаваясь в детали каждого пункта:
+▪ At first we will run through the main points and then we will discuss them in detail. — Сначала мы просмотрим основные пункты, а после мы обсудим их подробно.
+ 
+✅Go into — этот фразовый глагол является в некотором роде противоположным по значению предыдущему глаголу. Go into something — описывать в деталях, углубляться в суть чего-либо, очень подробно излагать какую-либо информацию:
+▪ I will not go into details now, but at the end of the presentation you will be able to ask your questions. — Я сейчас не буду вдаваться в детали, но в конце презентации вы сможете задать ваши вопросы.
+ 
+✅ Go on — продолжать, развивать тему, возобновить разговор, обсуждение после паузы. Такое же значение имеет и фразовый глагол carry on. После этих фразовых глаголов используется герундий:
+▪ After the break the participants went on discussing the possible solutions to the problem. — После перерыва участники продолжили обсуждать возможные решения проблемы.
+ 
+✅ Put forward — предлагать, выносить на рассмотрение (план, идею, предложение). Это separable phrasal verb, что значит, что дополнение может стоять "в середине" фразового глагола:
+▪ Several constructive ideas were put forward during the discussion. — Во время дискуссии было выдвинуто несколько конструктивных идей.
+ 
+✅ Sum up — подводить итоги, подытожить:
+▪ By way of conclusion, he summed up all the points covered in his report. — В качестве вывода, он подытожил все пункты, освещенные в его докладе
+

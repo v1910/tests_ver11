@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.73999bcb.chunk.css",
-    "main.js": "/static/js/main.efe267ee.chunk.js",
-    "main.js.map": "/static/js/main.efe267ee.chunk.js.map",
+    "main.css": "/static/css/main.03edb38e.chunk.css",
+    "main.js": "/static/js/main.55b0df56.chunk.js",
+    "main.js.map": "/static/js/main.55b0df56.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.71b52c4b.js",
     "runtime-main.js.map": "/static/js/runtime-main.71b52c4b.js.map",
     "static/js/2.dc1e4b72.chunk.js": "/static/js/2.dc1e4b72.chunk.js",
     "static/js/2.dc1e4b72.chunk.js.map": "/static/js/2.dc1e4b72.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.73999bcb.chunk.css.map": "/static/css/main.73999bcb.chunk.css.map",
+    "static/css/main.03edb38e.chunk.css.map": "/static/css/main.03edb38e.chunk.css.map",
     "static/js/2.dc1e4b72.chunk.js.LICENSE.txt": "/static/js/2.dc1e4b72.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/London.1e1c5045.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.71b52c4b.js",
     "static/js/2.dc1e4b72.chunk.js",
-    "static/css/main.73999bcb.chunk.css",
-    "static/js/main.efe267ee.chunk.js"
+    "static/css/main.03edb38e.chunk.css",
+    "static/js/main.55b0df56.chunk.js"
   ]
 }

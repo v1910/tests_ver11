@@ -13,7 +13,8 @@ export function Words() {
     let showCurrentWordsWork = null;
 
 
-    if(showHideWords) showCurrentWordsWork = <ShowWordTest />; //<ShowCurrentTest parCallback = {testCallback} />;
+    if(showHideWords) showCurrentWordsWork = <ShowWordTest /> //<ShowCurrentTest parCallback = {testCallback} />;
+    else showCurrentWordsWork = null;
     
     return <section id="words_wrapper">
                 {showCurrentWordsWork}

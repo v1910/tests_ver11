@@ -17,7 +17,10 @@ export function Listen() {
 
     showHideListen = useSelector((store) => store.showHideListen);
 
-    if(showHideListen) showCurrentListenWork = <ShowCurrentListen />; 
+console.log('Listen:  showHideListen=',showHideListen);
+
+    if(showHideListen) showCurrentListenWork = <ShowCurrentListen />
+    else showCurrentListenWork = null;
 
     return <section id="listen_wrapper">
 

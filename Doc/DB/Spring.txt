@@ -1,0 +1,59 @@
+//DB of Spring
+
+{
+'_id': 1,
+'name': 'Be full of the joys of spring',  
+'phrases': ['- Radiant and cheerful, overflowing with optimism and readiness.',
+            'When she came to the office she was full of the joys of spring. -She came to the office cheerful and full of energy.'
+           ]
+}
+,
+{
+    '_id': 2,
+    'name': 'No spring chicken',  
+    'phrases': ['- Middle-aged man', 'He is no spring chicken but he spends three hours in the gym every day. - Although he is not young, he spends three hours every day in the gym.'
+               ]
+}
+,
+{
+    '_id': 3,
+    'name': 'Spring to mind',  
+    'phrases': ['- Come to mind, arise in memory (of a thought or idea).','I want to give you a couple of examples but nothing springs to mind. - I want to give you a couple of examples, but nothing comes to mind.'
+               ]
+}
+,
+{
+    '_id': 4,
+    'name': 'Spring into action',  
+    'phrases': ['- Actively get down to business.', 'As soon as the teacher appeared in the classroom, everyone sprang into action. - As soon as the teacher appeared in the classroom, everyone actively set to work.'
+               ]
+}
+,
+{
+    '_id': 5,
+    'name': 'Spring to someone`s defence',  
+    'phrases': ['- Come to the rescue quickly.','The boys attacked Bill but his elder brother sprang to his defense. - The boys pounced on Bill, but his older brother arrived in time to help.'
+               ]
+}
+,
+{
+'_id': 6,
+'name': 'Spring to life',  
+'phrases': ['- Reborn, awaken.', 'The city springs to life at dawn. - The city wakes up at dawn.'
+           ]
+}
+,
+{
+'_id': 7,
+'name': "Spring to one`s feet",  
+'phrases': ['- Get up quickly, jump up.', 'When the play finished the audience sprang up to its feet and applauded. - When the play ended, the audience jumped up and applauded.'
+           ]
+}
+,
+{
+'_id': 8,
+'name': 'Spring fever',  
+'phrases': ['- A feeling of anxiety, tension, excitement, which is characteristic of many people at the beginning of spring.','You are too excited. I think it`s spring fever. - You are too excited. I think it`s all spring.'
+           ]
+}
+

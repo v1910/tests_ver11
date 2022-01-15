@@ -939,7 +939,7 @@ export function AllTests()
       A4: "carry with"      
     },
     {//5_16
-      R: "R9",
+      R: "R80",
       C_A: "4",
       Q: "Choose the correct equivalent for this sentence: `Our requirements and theirs are not the same`",
       A1: "our requirements differ of theirs.",
@@ -948,7 +948,7 @@ export function AllTests()
       A4: "our requirements are different from theirs"      
     },
     {//5_17
-      R: "R9",
+      R: "R81",
       C_A: "1",
       Q: "The concrete is ________ by putting metal bars in it; this makes it stronger and more durable.",
       A1: "reinforced",
@@ -958,14 +958,14 @@ export function AllTests()
       A5: "streamlined"
     },
     {//5_18
-      R: "R9",
+      R: "R82",
       C_A: "1",
       Q: "Which sentence has the correct punctuation?",
       A1: "Hardcover books are more expensive than paperback books.",
       A2: "Hardcover books are more expensive, than paperback books."      
     },
     {//5_19
-      R: "R9",
+      R: "R83",
       C_A: "1",
       Q: "Although she was knowledgeable in a number of fields, she was hired for her particular _____ in computer programming.",
       A1: "expertise",
@@ -975,7 +975,7 @@ export function AllTests()
       A5: "reluctance"
     },
     {//5_20
-      R: "R9",
+      R: "R84",
       C_A: "2",
       Q: " _________of carbon dioxide in the air has increased.",
       A1: "The number",

@@ -9,6 +9,7 @@ import  "./HeaderPhrases.css";
 import { useSelector, useDispatch } from 'react-redux';
 
 
+
 let list_phrases_wrapper      = null;
 
 
@@ -17,17 +18,18 @@ export function HeaderPhrases() {
 console.log('HeaderPhrases-----');  
 
 
-    function mouseEnterList() {  // mouse cursor is over id=header_menu_tests  --------------
+    function mouseEnterList() {  // mouse cursor is over id=header_menu_tests  --------------       
         
 console.log('HeaderPhrases: mouseEnterList--------------')
 //console.log('2 HeaderListen:  list_tests_wrapper=',list_tests_wrapper);
         
-            dispatch({  type: 'HeaderPhrases_mouseEnterList', 
-                    payload: {
-                        list_phrases_wrapper: 'visible'
-                        
-                    }
-            });
+        dispatch({  type: 'HeaderPhrases_mouseEnterList', 
+                payload: {
+                    list_phrases_wrapper: 'visible'
+                    
+                }
+        });
+            
         
     }//end of mouseEnterList--------------------
 
@@ -41,6 +43,20 @@ console.log('HeaderPhrases: mouseLeaveList-------')
                 });
     }// end of mouseLeaveList------------------------
 
+/*
+    useEffect(() => {
+        fetch('/getGreatings')
+        .then(response => response.json())
+        .then(phrases => {
+            dispatch({type: 'ShowCurrentPhrases', 
+            payload: {
+                phrases: phrases
+            }
+            })
+
+        })
+    });
+*/
 
     let dispatch = useDispatch();
 

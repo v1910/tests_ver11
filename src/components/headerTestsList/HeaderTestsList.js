@@ -50,7 +50,12 @@ console.log('HeaderTestsList -------------');
                                                                                     state_test:         Array(tests[currentTests].length).fill(true),
                                                                                     state_green_red:    Array(tests[currentTests].length).fill([-1,-1]),
                                                                                     firstTimer:         null,
-                                                                                    showHideWords:      false
+                                                                                    showHideWords:      false,
+                                                                                    showHideListen:     false,
+                                                                                    showHidePrases:     false,
+                                                                                    showHideJokes:      false,
+                                                                                    prases:             null,
+                                                                                    phrases_wrapper_visibility: {display: 'none'}
                                                                                 }
                                                                             })
                                                             }

@@ -50,6 +50,9 @@ console.log('1 HeaderistenList:  list_listen_wrapper=',list_listen_wrapper);
                                                                                     showHideTest:       false,
                                                                                     showHideWords:      false,  
                                                                                     showHideListen:     true,                                                                                  
+                                                                                    showHidePhrases:    false,
+                                                                                    showHideJokes:      false,
+                                                                                    phrases:            '',
                                                                                     list_tests_wrapper: 'hidden',
                                                                                     list_words_wrapper: 'hidden'
                                                                                 }

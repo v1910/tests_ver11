@@ -25,7 +25,7 @@ a {
   position: relative;
   background-image: url("./London.jpg");
   background-repeat: no-repeat;
-  background-size: 80% 80%;
+  background-size: 80% 100%;
   background-position-x: 50%;
   min-height: 100vh;
 }

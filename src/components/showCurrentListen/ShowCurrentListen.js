@@ -14,7 +14,7 @@ import './ShowCurrentListen.css';
 
 let currentAudio                               = null;
 
-let path_audio                                 = '../../audio/sound/mm.mp3';
+let path_audio                                 = '/audio/sound/mm.mp3';
 
 export function ShowCurrentListen() {  //---------------------------------------
 
@@ -29,53 +29,36 @@ export function ShowCurrentListen() {  //---------------------------------------
 
 
   let show_listen = (
-    <div className='body_listen'>
-      <div id="listen">
-        <figure>
-          <figcaption>Listen:</figcaption>
-
-        </figure>
-      </div>  
-
-    </div>
-); 
-
-/*
-  let player = require('play-sound');
-
-  player.play({path_audio}, function(err){
-    if(err) throw err;
-    console.log('audio');
-  });
-*/  
-
-//console.log('ShowWordTest: state_label_next_descr_value=',state_label_next_descr_value);
-//console.log('ShowWordTest: count_pick_button_show_description=',count_pick_button_show_description);
-//const play = require('audio-play');
-//const load = require('audio-loader');
-
-
-//audio.play();
-//console.log('ShowCurrentListen: audio=',audio);
-//console.log('ShowCurrentListen: currentAudio=',currentAudio);
-/*
-  let show_listen = (
-      <div className='body_listen'>
+    <div className="listen_cont_all">
+      <div className='listen_body'>
         <div id="listen">
           <figure>
             <figcaption>Listen:</figcaption>
-            <audio
-                controls
-                src={path_audio}>
-                    Your browser does not support the
-                    <code>audio</code> element.
+            <audio  
+                  controls
+                  src={path_audio}>
+                      Your browser does not support the
+                      <code>audio</code> element.
             </audio>
           </figure>
         </div>  
-
       </div>
-  );     
-*/
+      <div className="listen_button_cont">
+        <button id="listen_button">See text</button>
+      </div>
+      <div id="listen_text">
+          <p>Proba</p>
+          <p>Proba</p>
+          <p>Proba</p>
+          <p>Proba</p>
+          <p>Proba</p>
+      </div>
+    </div>
+); 
+
+  const el = document.getElementById('listen_wrapper');
+  el.scrollIntoView({block: "start", behavior: "smooth"});
+
   return show_listen;
 
   

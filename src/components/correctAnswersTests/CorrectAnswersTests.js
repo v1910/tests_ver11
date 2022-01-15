@@ -1200,7 +1200,62 @@ synonyms:conduct, deal\n
 verb misbehave badly; act in a silly or improper way\n
 synonyms:act up\n
 `,
-
+R80:`
+<h3>same</h3>\n
+ame means identical, similar, or unchanged.\n 
+If you wear the same outfit as your best friend,\n 
+your clothes will be exactly alike. That's NOT ok on prom night.\n
+You might make the same mistake on one math quiz after another — in\n 
+other words, you mess up similar problems every time.\n 
+You can also say that one thing is the same as another\n 
+if there's an equal amount: "We got the same pay for babysitting last summer."\n 
+You might wake up at the same time every day and eat the same cereal for breakfast.\n 
+If so, change it up!\n
+`,
+R81:`
+<h3>reinforced</h3>\n
+When something is reinforced, it is stronger or more supported than before,\n 
+like a reinforced attitude that is stronger because peers and family members\n 
+also have it, or a reinforced floor that has extra pillars and beams holding it up from below.\n
+Reinforced is the adjective form of reinforce, a verb that means "to strengthen."\n 
+So a good synonym for reinforced is strengthened.\n 
+In high-traffic areas like school floors and stairwells,\n 
+builders choose reinforced concrete, which has an internal structure of metal bars,\n 
+because it will last longer. Your socks might have reinforced toes,\n 
+meaning thicker fabric in that part, to prevent holes from forming.\n
+`,
+R82:`
+<h3>comma before than</h3>\n
+A comma should not be placed before “than” unless it appears in series.\n 
+And, a comma may conveniently precede “than” when it introduces parenthetical\n 
+information at the end of a sentence, which may only happen when facilitating\n 
+readability or trying to achieve an emphatic effect.\n 
+However, a comma must not be used before “than” when it ordinarily\n 
+and non-parenthetically functions as a preposition or a conjunction in a sentence.\n
+`,
+R83:`
+<h3>expertise</h3>\n
+When you're an expert at something, you show expertise — or an exceptional\n 
+knowledge of the subject. "He had expertise in accounting, having excelled\n 
+in math, but he had even more expertise in dancing, his hobby since a small child."\n
+Expertise has obvious roots in the word expert.\n 
+Just about any interest or field has a place for experts.\n 
+Just as one individual has expertise in world religions, another may have expertise\n 
+in computer gaming. Working hard or immersing yourself in a specialty leads to expertise,\n 
+and it comes through both study and hands-on experience.\n
+`,
+R84:`
+<h3>amount</h3>\n
+An amount is a number, or quantity, of something.\n 
+If you're surprised by the amount of work you have to do at your new job,\n 
+you probably didn't expect such a long list of tasks.\n
+You might complain about the amount of time it takes\n 
+for the shoes you bought to arrive: amount here means the number\n 
+of days before you can wear them. Amount is also a verb, meaning "add up to,"\n 
+like when you hope the tips you earn will amount to more than minimum wage.\n 
+This meaning came before the noun amount, from the now obsolete definition,\n 
+"to mount a horse," from the Old French amonter, "upward."\n
+`
 };	
 
 	return c_answers;

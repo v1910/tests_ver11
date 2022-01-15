@@ -1,0 +1,60 @@
+//DB of Phrasal verbs
+
+{
+    '_id': 1,
+    'name': 'talk through',
+    'phrases': ['If you talk something through with someone, you discuss it with them thoroughly.','Now let us talk through the main problems with the new client base.', 'Now let us talk through the main problems with the new client base.', 'Now she must talk her sister through the process a step at a time.']
+},
+
+{
+    '_id': 2,
+    'name': 'run through',
+    'phrases': ['If you run through a list of items, you read or mention all the items quickly.','NI ran through the options with him', ' At first we will run through the main points and then we will discuss them in detail.']
+},
+
+{
+    '_id': 3,
+    'name': 'go into',
+    'phrases': ['If you go into something, you describe or examine it fully or in detail.',"It was a private conversation and I don't want to go into details about what was said.", " I will not go into details now, but at the end of the presentation you will be able to ask your questions."]
+},
+
+{
+    '_id': 4,
+    'name': 'go on',
+    'phrases': ['If you go on doing something, or go on with an activity, you continue to do it.','Unemployment is likely to go on rising this year.','After the break the participants went on discussing the possible solutions to the problem.']
+},
+
+{
+    '_id': 5,
+    'name': 'put forward',
+    'phrases': ['If you put forward a plan, proposal, or name, you suggest that it should be considered for a particular purpose or job.','He has put forward new peace proposals.', 'I rang the colonel and asked him to put my name forward for the vacancy.']
+},
+
+{
+    '_id': 6,
+    'name': 'sum up',
+    'phrases': ['If you sum something up, you describe it as briefly as possible.',"ne voter summed up the mood–'Politicians have lost credibility,' he complained. ", 'By way of conclusion, he summed up all the points covered in his report.']
+},
+{
+    '_id': 7,
+    'name': 'get up',
+    'phrases': ['When someone who is sitting or lying down gets up, they rise to a standing position',  'When you get up, you get out of bed. 3) If you try to get on, you try to be successful in your career.','I got up and walked over to where he was.', 'They have to get up early in the morning.', 'He is proof that you do not need to be a graduate to get on in this field.']
+},
+
+{
+    '_id': 8,
+    'name': 'get on with',
+    'phrases': ['If you get on with someone, you like them and have a friendly relationship with them.', 'if you get on with something, you continue doing it or start doing it.',"The host fears the guests won't get on.", 'Jane got on with her work. ']
+},
+
+{
+    '_id': 9,
+    'name': 'kick off',
+    'phrases': ['In football, when the players kick off, they start a game by kicking the ball from the centre of the pitch.', 'If an event, game, series, or discussion kicks off, or is kicked off, it begins.','Liverpool kicked off an hour ago.', 'The shows kick off on October 24th.']
+},
+
+{
+    '_id': 10,
+    'name': 'come back to',
+    'phrases': ['If you come back to a topic or point, you talk about it again later.',"I'm coming back to that. Just write it down for the minute.", 'I want to come back to my real life.']
+}

@@ -1,9 +1,12 @@
-//Footer.js------------------
+//Footer.js- site footer -----------------
 
 import React from "react"
 
+import './Footer.css';
+
 export function Footer() {
-  console.log('FooterSite----------------------');
+//  console.log('FooterSite----------------------');
+  window.location.hash = 'London_bgr';
   return (
     <footer className="footer_site">
       <hr />

@@ -17,15 +17,109 @@ app.use(express.static('./build'))
 //app.use(express.static(__dirname + '/src'));
 
 const MongoClient = require('mongodb').MongoClient;
-const assert = require('assert');
 
 // Connection URL
 const url = 'mongodb://localhost:27017';
+let db;
 
 // Database Name
-const dbName = 'e-shop';
-const dbColl = 'productBasket';
+const dbName = 'TESTS';
+const client = new MongoClient(url);
+
+// Use connect method to connect to the server
+client.connect(function(err){
+  if(err) {
+    console.log(err);
+    return;
+  } else {
+    console.log("Connected successfully to server");
+    db = client.db(dbName);
+  }
+});
+
+app.get('/home',(req,res) => {
+  res.send({'_id': 1,'name': '333','phrases': ['444']});
+});
+
+app.get('/getGreatings',(req,res) => {
+  //Get the documents of the collection
+  const collection = db.collection('Greatings');
+  //Find some documents
+  collection.find().toArray(function(err,phrases){
+    if(err) {
+      console.log(err);
+      return;
+    } else {
+      res.json(phrases);
+    }
+  })
+});
+
+
+app.get('/getPhrasalVerbs',(req,res) => {
+  //Get the documents of the collection
+  const collection = db.collection('PhrasalVerbs');
+  //Find some documents
+  collection.find().toArray(function(err,phrases){
+    if(err) {
+      console.log(err);
+      return;
+    } else {
+      res.json(phrases);
+    }
+  })
+});
+
+
+app.get('/getJokes',(req,res) => {
+  //Get the documents of the collection
+  const collection = db.collection('Jokes');
+  //Find some documents
+  collection.find().toArray(function(err,phrases){
+    if(err) {
+      console.log(err);
+      return;
+    } else {
+      res.json(phrases);
+    }
+  })
+});
+
+
+app.get('/getPresentation',(req,res) => {
+  //Get the documents of the collection
+  const collection = db.collection('Presentation');
+  //Find some documents
+  collection.find().toArray(function(err,phrases){
+    if(err) {
+      console.log(err);
+      return;
+    } else {
+      res.json(phrases);
+    }
+  })
+});
+
+
+app.get('/getSpring',(req,res) => {
+  //Get the documents of the collection
+  const collection = db.collection('Spring');
+  //Find some documents
+  collection.find().toArray(function(err,phrases){
+    if(err) {
+      console.log(err);
+      return;
+    } else {
+      res.json(phrases);
+    }
+  })
+});
+
+/*
+const dbColl = 'Greatings';
 let cl;
+
+const assert = require('assert');
 
 // Use connect method to connect to the server
 MongoClient.connect(url, function(err, client) {
@@ -42,8 +136,8 @@ app.get('/start', (req, res) => {
 
 //  res.sendFile(__dirname + '/public/index.html');
 
-  const db = cl.db(dbName);
-  const collection = db.collection(dbColl);
+  db = cl.db(dbName);
+  collection = db.collection(dbColl);
   
   // Find some documents
   collection.find({}).toArray(function(err, docs) {
@@ -69,8 +163,8 @@ app.get('/start', (req, res) => {
 
 app.get('/getAllProducts', (req, res) => {
 
-  const db = cl.db(dbName);
-  const collection = db.collection(dbColl);
+  db = cl.db(dbName);
+  collection = db.collection(dbColl);
   // Find some documents
   collection.find({}).toArray(function(err, docs) {
     assert.equal(err, null);
@@ -134,6 +228,7 @@ app.get('/removeProduct/:id', (req, res) => {
   });
   //res.end();
 });
+*/
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)

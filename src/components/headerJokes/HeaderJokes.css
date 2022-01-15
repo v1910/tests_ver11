@@ -1,0 +1,38 @@
+
+#list_jokes_wrapper {
+	width: 60px;
+	height: 100px;
+	padding-left: 2px;
+	font-size: 10px;
+	
+}
+
+.header_menu_jokes_cont {
+/*	height: 16px;*/
+	width: 40px;
+	margin-left: 5px;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: blue;
+    text-decoration: none;	
+}
+
+.header_menu_jokes_cont:hover  {
+	background-color: yellow;
+	color: red;
+
+}	
+
+#header_menu_jokes {
+	width: 50px;
+	margin-top: 5px;
+}
+
+#header_menu_jokes_cont_id {
+	width: 50px;
+	height: 20px;
+	top: 10px;
+	margin-left: 5px;
+}

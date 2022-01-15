@@ -310,7 +310,9 @@ console.log('ShowCurrentTest: handleChange:  evt=',evt);
 
     startWatch4(ID_time, ID_time_qst, current_question, firstTimer, countDownDate_qst, X_setInterval); // start time for 0-th question  
            
-//console.log('7 ShowCurrentTest:   state_test=',state_test);  
+//console.log('7 ShowCurrentTest:   state_test=',state_test); 
+    
+    window.location.hash = 'tests_wrapper';
 
     return element;
 

@@ -1,6 +1,11 @@
 #listen_wrapper {
-	width: 320px;
-  background-color: #f3f7fa;
+  background-color: white;
 	margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

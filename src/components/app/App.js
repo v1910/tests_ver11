@@ -1,4 +1,4 @@
-//App.js------------------
+//App.js- main program -----------------
 
 import React from 'react';
 
@@ -18,16 +18,9 @@ import {Footer} from '../footer/Footer.js';
 
 import './App.css';
 
-import Image from "./London.jpg";
-
-//import {HeaderMenuTestsCont2} from "HeaderMenuTestsCont2.js";
-
-//import {ListTestsWrapper} from "ListTestsWrapper.js";
-
-//import {ListWordsWrapper} from "ListWordsWrapper.js";
 
 function App() {
-console.log("App: -----------------");
+//console.log("App: -----------------");
     return (
     <>
       <div id="London_bgr" >         
@@ -38,8 +31,10 @@ console.log("App: -----------------");
       </div>
       <Tests />
       <Words /> 
-      <Listen />  
-      <Phrases />   
+      <Listen /> 
+      <Phrases />
+      <Jokes />
+      <Footer />     
     </>      
     )
 
@@ -48,20 +43,4 @@ export default App;
 
 /*
 
-    return (
-
-      <div id="london_bgr" style={{backgroundImage: 'url(${Image})'}}> 
-                 
-        <Header />
-        <Tests />
-        <Words />
-        <Listen />
-        <Phrases />
-        <Jokes />
-        <Footer />  
-
-      </div>
-    )
-
-
-*/        
+*/

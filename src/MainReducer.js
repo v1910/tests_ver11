@@ -39,7 +39,7 @@ let initialStore =
 //  	 nTests:  0, // quantity of tests
   	 
 
-	 idioms_files:  ["JOB","HOT","MIX"], // idioms files
+//	 idioms_files:  ["JOB","HOT","MIX"], // idioms files
   	
 	/* initialize variables */
 	 count:  0, 
@@ -101,43 +101,43 @@ let initialStore =
      all_words: [SOCIETYwords(),SPORTwords(),ACCOMMODATIONwords(),APPEARANCEwords(),
                  PREPOSITIONSwords(),NATUREwords()], // array of all words
 
-     showHideWords: false,  //hide words in Words.js
+     showHideWords:                             false,  //hide words in Words.js
 
-     words_wrapper: null,
+     words_wrapper:                             null,
 
-     count_pick_button_show_word: 0,
+     count_pick_button_show_word:               0,
        
-     count_pick_button_show_answer: 0,
+     count_pick_button_show_answer:             0,
 
-	 work_arr: [], // array of random numbers
+	 work_arr:                                  [], // array of random numbers
 
-	 count_pick_button_show_word:  0,  //count of picking button_show_word
+	 count_pick_button_show_word:               0,  //count of picking button_show_word
 
-	 count_pick_button_show_description:  0, //count of picking button_show_description
+	 count_pick_button_show_description:        0, //count of picking button_show_description
 
-	 current_number_word:  0,  //current number word
+	 current_number_word:                       0,  //current number word
 
-	 current_number_word_group:  0, // current word group (SOCIETY)
+	 current_number_word_group:                 0, // current word group (SOCIETY)
 
-	 count_pick_button_show_answer:  0,
+	 count_pick_button_show_answer:             0,
 
-	 nWords:  0, // quantity of words
+	 nWords:                                    0, // quantity of words
 
      words_files:  ["SOCIETY","SPORT","ACCOMMODATION", "APPEARANCE", "PREPOSITIONS", "NATURE"], // words files
 
-	 words:  [], // words array
+	 words:                                     [], // words array
 
-     state_button_next_descr_color: 'white',
+     state_button_next_descr_color:             'white',
 
-     list_words_wrapper: 'hidden', //hide (show) words list
+     list_words_wrapper:                        'hidden', //hide (show) words list
 
-     state_label_yes_no_word_style: {color:  'green', visibility: 'hidden'},
+     state_label_yes_no_word_style:             {color:  'green', visibility: 'hidden'},
 
-     input_input_word_value: '',
+     input_input_word_value:                    '',
 
-     button_show_descr_style: "color: white",
+     button_show_descr_style:                   "color: white",
 
-     button_show_words_style: "color: white",
+     button_show_words_style:                   "color: white",
 
      state_label_next_descr_value:               '',
 
@@ -166,7 +166,7 @@ let initialStore =
 
      
 
-	// LISTEN --------------
+	// listen --------------
 
      showHideListen:                            false,
 
@@ -177,19 +177,27 @@ let initialStore =
      list_listen_wrapper:                       'hidden',
 
      
-    // Phrases -----------------
+    // phrases -----------------
 
     showHidePhrases:                            false,  //do not show Phrases
 
-    nPhrases:                                   3,  // amount of all Phrases files
-
-    currentPhrases:                             1, //current Phrases file
+    currentPhrases:                             "Greatings", //current Phrases file   "/home",
 
     list_phrases_wrapper:                       'hidden',
 
+    phrases_collections:                        ["Greatings","PhrasalVerbs","Presentation", "Spring"], // phrases collections of DB
+
+    phrases:                                    null,
+
+    phrases_wrapper_visibility:                 {display: 'none'},
 
 	// jokes -----------------
-	 jokes_arr: Jokes() // read all jokes
+
+     showHideJokes:                             false,
+
+     currentJokes:                              "Jokes",
+
+     jokes:                                     null,
 	
 
 
@@ -199,7 +207,7 @@ let workInitialStore = initialStore;
 
 initialStore.count_questions_test = workAllTest[workInitialStore.currentTest].length; // amount of questions in current test
 
-initialStore.nJokes = workInitialStore.jokes_arr.length // amount of all jokes
+//initialStore.nJokes = workInitialStore.jokes_arr.length // amount of all jokes
 
 initialStore.count_correct_answer = Array(initialStore.count_questions_test).fill(0);  // count of correct answers for every question
     
@@ -252,6 +260,7 @@ function MainReducer(state = initialStore, action){
             }
 
         case 'HeaderTestsList':       
+console.log('1 MainReducer: HeaderTestsList: payload.showHidePrases=',payload.showHidePrases);                        
             return {
                 ...state,
                 currentTest:        payload.currentTest, 
@@ -262,7 +271,12 @@ function MainReducer(state = initialStore, action){
                 state_test:         payload.state_test,
                 state_green_red:    payload.state_green_red,
                 firstTimer:         null,
-                showHideWords:      payload.showHideWords                
+                showHideWords:      payload.showHideWords,
+                showHideListen:     payload.showHideListen,
+                showHidePrases:     payload.showHidePrases,
+                showHideJokes:      payload.showHideJokes,
+                prases:             payload.prases,
+                phrases_wrapper_visibility: payload.phrases_wrapper_visibility                
             }
 
         case 'ShowCurrentTest_handleChange':       
@@ -347,7 +361,10 @@ function MainReducer(state = initialStore, action){
                 state_button_next_word_value:               payload.state_button_next_word_value,
                 work_arr:                                   payload.work_arr,
                 input_input_word_value:                     payload.input_input_word_value,
-                showHideTest:                               payload.showHideTest
+                showHideTest:                               payload.showHideTest,
+                showHideListen:                             payload.showHideListen,                                                                                  
+                showHidePhrases:                            payload.showHidePhrases,
+                showHideJokes:                              payload.showHideJokes
             };         
 
         case 'ShowWordTest_showDescr':  
@@ -472,7 +489,10 @@ console.log('MainReducer: HeaderListenList: state_label_next_descr_value=',paylo
                 currentAudio:           payload.currentAudio, 
                 showHideTest:           payload.showHideTest,
                 showHideWords:          payload.showHideWords,  
-                showHideListen:         payload.showHideListen,                                                                                  
+                showHideListen:         payload.showHideListen, 
+                showHidePhrases:        payload.showHidePhrases,
+                showHideJokes:          payload.showHideJokes,
+                phrases:                payload.phrases,
                 list_tests_wrapper:     payload.list_tests_wrapper,
                 list_words_wrapper:     payload.list_words_wrapper
             };               
@@ -496,22 +516,70 @@ console.log('MainReducer: HeaderPhrases_mouseLeaveList: list_phrases_wrapper=',p
             };                           
 
         case 'HeaderPhrasesList':                
-console.log('MainReducer: HeaderPhrasesList: showHidePhrases=',payload.showHidePhrases);        
+//console.log('MainReducer: HeaderPhrasesList: showHideListen=',payload.showHideListen);        
             return {
                 ...state,
-                currentPhrases:         payload.currentPhrases, 
+                currentPhrases:             payload.currentPhrases, 
+                showHideTest:               payload.showHideTest,
+                showHideWords:              payload.showHideWords,  
+                showHideListen:             payload.showHideListen,                                                                                  
+                showHidePhrases:            payload.showHidePhrases,   
+                showHideJokes:              payload.showHideJokes,                                                                               
+                list_tests_wrapper:         payload.list_tests_wrapper,
+                list_words_wrapper:         payload.list_words_wrapper,
+                list_listen_wrapper:        payload.list_listen_wrapper,
+                phrases:                    payload.phrases,
+                phrases_wrapper_visibility: payload.phrases_wrapper_visibility
+            };               
+
+        case 'ShowCurrentPhrases':                
+console.log('MainReducer: ShowCurrentPhrases: phrases=',payload.phrases);        
+            return {
+                ...state,
+                phrases: payload.phrases
+            };                           
+
+//================================================================================  
+        //JOKES--------------------------
+
+        case 'ShowCurrentJokes':                
+console.log('MainReducer: ShowCurrentJokes: jokes=',payload.jokes);        
+            return {
+                ...state,
+                jokes: payload.jokes
+            };                                   
+
+        case 'HeaderJokes_mouseEnterList':                
+console.log('MainReducer: HeaderJokes_mouseEnterList: jokes=',payload.list_jokes_wrapper);        
+            return {
+                ...state,
+                list_jokes_wrapper: payload.list_jokes_wrapper
+            };                                              
+
+        case 'HeaderJokes_mouseLeaveList':                
+console.log('MainReducer: HeaderJokes_mouseLeaveList: jokes=',payload.list_jokes_wrapper);        
+            return {
+                ...state,
+                list_jokes_wrapper: payload.list_jokes_wrapper
+            }; 
+            
+        case 'HeaderJokes':                
+console.log('MainReducer: HeaderJokes: showHideJokes=',payload.showHideJokes);        
+            return {
+                ...state,
                 showHideTest:           payload.showHideTest,
                 showHideWords:          payload.showHideWords,  
                 showHideListen:         payload.showHideListen,                                                                                  
-                showHidePhrases:        payload.showHidePhrases,                                                                                  
+                showHidePhrases:        payload.showHidePhrases,    
+                showHideJokes:          payload.showHideJokes,
                 list_tests_wrapper:     payload.list_tests_wrapper,
                 list_words_wrapper:     payload.list_words_wrapper,
-                list_listen_wrapper:    payload.list_listen_wrapper
-            };               
+                list_listen_wrapper:    payload.list_listen_wrapper,
+                phrases:                payload.phrases
+            }; 
 
+//================================================================================ 
 
-//================================================================================        
-            
         default:
             return state;
 

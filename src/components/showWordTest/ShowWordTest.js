@@ -331,6 +331,9 @@ console.log('ShowWordTest: state_button_next_word_value=',state_button_next_word
       </div>
   );     
 
+  const el = document.getElementById('words_wrapper');
+  el.scrollIntoView({block: "start", behavior: "smooth"});
+
   return show_Word;
   
 }//---end of ShowWordTest    

@@ -48,7 +48,6 @@ export function HeaderWordsList() { //----------------------
     
     let work1;
     let arr=[];
-    let showHideTest = false;
 
 
 console.log('HeaderWordsList: current_number_word=',current_number_word);	
@@ -94,7 +93,10 @@ console.log('HeaderWordsList: all_words[0][0].D=',all_words[0][0].D);
                                     state_button_next_word_value:               'Next Word ' + ( current_number_word+1) +'/'+ nWords,
                                     work_arr:                                   [],
                                     input_input_word_value:                     '',
-                                    showHideTest:                               showHideTest
+                                    showHideTest:                               false,
+                                    showHideListen:                             false,                                                                                  
+                                    showHidePhrases:                            false,
+                                    showHideJokes:                              false
                                 }
                             })                      
                         }
